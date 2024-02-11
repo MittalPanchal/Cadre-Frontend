@@ -1,14 +1,7 @@
-export default {
-  build: {
-    rollupOptions: {
-      onwarn(warning, rollupWarn) {
-        // Suppress the warning related to eval usage
-        if (warning.code === 'EVAL') return;
-        
-        // Pass through any other warnings
-        rollupWarn(warning);
-      },
-    },
-    chunkSizeWarningLimit: 2000,
-  },
-};
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [react()],
+})
