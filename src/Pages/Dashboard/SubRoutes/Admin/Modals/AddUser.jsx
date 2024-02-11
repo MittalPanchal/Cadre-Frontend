@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import "../../settings/settings.css";
+import "../../Settings/Settings.css";
 import avatar from "../../../../../assets/images/avatar.svg";
 import useUserCollection from "../../../../../Hooks/useUserCollection";
 import { useSelector } from "react-redux";
