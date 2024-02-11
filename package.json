@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "run build",
+    "build": "bash your_build_script.sh",
     "preview": "vite preview"
   },
   "dependencies": {
