@@ -13,7 +13,7 @@
   align-items: center;
   position: relative;
   flex: 1;
-  background-image: url("./portrait.jpg");
+  /* background-image: url("./portrait.jpg"); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
