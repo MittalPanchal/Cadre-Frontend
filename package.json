@@ -7,7 +7,6 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
-    
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.2",
@@ -34,7 +33,6 @@
     "socket.io-client": "^4.6.1",
     "sweetalert2": "^11.7.3",
     "use-is-typing": "^1.0.3"
-   
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
