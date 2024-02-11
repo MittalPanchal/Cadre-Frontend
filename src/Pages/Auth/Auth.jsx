@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React,{ useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import logo from "../../assets/images/logo.png";
 import Lottie from "lottie-react";
