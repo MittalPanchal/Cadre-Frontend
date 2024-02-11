@@ -1,0 +1,12 @@
+.dashboard {
+  /* background-color: aqua; */
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+.dashboard_content {
+  flex: 8;
+  /* background-color: aqua; */
+  padding: 20px;
+  background-color: ghostwhite;
+}

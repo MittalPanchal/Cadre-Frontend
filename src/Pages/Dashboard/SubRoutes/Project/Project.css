@@ -1,0 +1,100 @@
+.project {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+  width: 100%;
+}
+.project .section_title {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.project .section_title .back_icon {
+  font-size: 30px;
+  cursor: pointer;
+}
+.project .section_content {
+  /* padding-top: 20px; */
+  /* margin-top: 20px; */
+  /* background-color: aqua; */
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.project .section_header {
+  /* background-color: blue; */
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.project .section_header .top_bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.project .section_header .top_bar .left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.project .section_header .top_bar .create_task {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  background-color: var(--primary);
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+}
+.project .section_header .bottom_bar {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+.project .section_header .bottom_bar .desc_contain {
+  flex: 9;
+  /* background-color: bisque; */
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+.project .section_header .bottom_bar .bottom_right .proj_fun_icons {
+  font-size: 25px;
+}
+.proj_fun_icons {
+  font-size: 20px;
+  cursor: pointer;
+}
+.project .section_header .bottom_bar .bottom_right {
+  display: flex;
+  gap: 20px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  /* background-color: blueviolet; */
+  justify-content: flex-end;
+  /* margin-right: 30px; */
+  width: min-content;
+}
+.section_content .kanban_contain {
+  display: flex;
+  /* background-color: rgb(233, 233, 233); */
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.view-more {
+  cursor: pointer;
+}

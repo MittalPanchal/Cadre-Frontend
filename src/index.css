@@ -1,0 +1,27 @@
+:root {
+  /* --black: #0a0d18; */
+  --primary: #26329f;
+  --primary-inactive: #6373ff;
+  --secondary: #d8b1fc;
+  --background: #90b3fd;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  /* box-sizing: border-box; */
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+p {
+  font-size: 16px;
+}

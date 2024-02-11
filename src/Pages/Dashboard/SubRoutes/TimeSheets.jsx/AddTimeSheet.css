@@ -1,0 +1,145 @@
+.add_timesheet_section {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+.add_timesheet_section .section_title {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.add_timesheet_section .section_title .back_icon {
+  font-size: 30px;
+  cursor: pointer;
+}
+.add_timesheet_section .sheet_contain {
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.add_timesheet_section .sheet_contain .sheet_card {
+  width: 100%;
+  border-radius: 10px;
+  /* height: 100px; */
+  border: 1px solid gray;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.add_timesheet_section .sheet_contain .tb {
+  /* padding: 8px; */
+  font-size: 18px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: default;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  min-height: 38px;
+  outline: 0 !important;
+  position: relative;
+  -webkit-transition: all 100ms;
+  transition: all 100ms;
+  background-color: hsl(0, 0%, 100%);
+  border-color: hsl(0, 0%, 80%);
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
+  padding: 1px 8px;
+}
+
+.add_timesheet_section .tb:focus {
+  box-shadow: 0 0 0 1px #2684ff;
+  border-color: #2684ff;
+}
+.desc_tb {
+  padding-top: 8px !important;
+}
+.add_timesheet_section .add_timesheet_form {
+  padding: 40px 20px 0px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.ATS_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.ATS_section div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.ATS_section .ATS_Hrs {
+  flex: 9;
+}
+.ATS_section .ATS_Fin {
+  flex: 1;
+}
+.add_timesheet_section .field_label {
+  margin-bottom: -5px;
+}
+.add_task_card {
+  border: none !important;
+  /* background-color: var(--primary); */
+  outline: 2px dashed var(--primary);
+  color: var(--primary);
+}
+.sheet_card_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.add_timesheet_section .add_task_section {
+  /* color: white; */
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.add_timesheet_section .add_task_section .add_icon {
+  font-size: 20px;
+}
+.remove_icon {
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.submit_timesheet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  background-color: var(--primary);
+  border: none;
+  outline: none;
+  padding: 0px 20px;
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+  width: fit-content;
+  padding: 10px 50px;
+  margin-top: 20px;
+}
+.error_msg {
+  color: red;
+}

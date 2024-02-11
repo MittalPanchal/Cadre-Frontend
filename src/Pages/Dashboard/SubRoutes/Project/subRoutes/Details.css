@@ -1,0 +1,343 @@
+.details {
+  /* background-color: aquamarine; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.details .section_title {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.details .section_title .back_icon {
+  font-size: 30px;
+  cursor: pointer;
+}
+.details .details_contain {
+  overflow-y: auto;
+  display: flex;
+  /* background-color: rgb(158, 158, 255); */
+  height: 100%;
+}
+.details .details_contain .details_content {
+  padding: 30px 20px;
+  height: 150vh;
+  width: 100%;
+  gap: 10px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "details members"
+    "tasks progress";
+}
+.details .details_contain .titlebar_left {
+  overflow: hidden;
+  /* background-color: aliceblue; */
+  grid-area: details;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.details .details_contain .titlebar_left .project_title {
+}
+.details .details_contain .titlebar_left .lead {
+  margin: 10px 0px 10px 10px;
+  /* margin-left: 10px; */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.details .details_contain .titlebar_left .lead img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.details .details_contain .titlebar_left .timings {
+  margin-left: 10px;
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+}
+.details .details_contain .titlebar_left .timings .pill {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  padding: 5px;
+  /* background-color: aqua; */
+  border-radius: 5px;
+}
+.details .details_contain .titlebar_left .timings .creation {
+  /* background-color: rgba(220, 220, 220, 0.442); */
+}
+.details .details_contain .titlebar_left .timings .due {
+  color: white;
+  background-color: rgb(255, 63, 63);
+}
+.details .details_contain .titlebar_left .details_text {
+  border-radius: 5px;
+  margin: 5px;
+  /* background-color: rgba(220, 220, 220, 0.442); */
+  border: 1px solid rgb(186, 186, 186);
+  background-color: white;
+  padding: 15px;
+  height: 100%;
+  overflow-y: auto;
+}
+.details .details_contain .titlebar_right {
+  overflow: hidden;
+  /* background-color: bisque; */
+  grid-area: members;
+  display: flex;
+  flex-direction: column;
+}
+.details .details_contain .subsection_title {
+  font-size: 20px;
+  padding: 10px 0px;
+  font-weight: bold;
+}
+.details .details_contain .titlebar_right .members {
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+  flex: 15;
+}
+.details .details_contain .titlebar_right .members .member_card {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  /* background-color: aqua; */
+  border-radius: 5px;
+  /* background-color: rgba(220, 220, 220, 0.501); */
+  background-color: white;
+  border: 1px solid rgb(186, 186, 186);
+  padding: 10px;
+  margin: 0px 10px;
+}
+.details .member_card .member_img_contain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.details .details_contain .titlebar_right .members .member_avatar {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.details .details_contain .titlebar_right .stacks {
+  flex: 1;
+  /* background-color: aquamarine; */
+  align-items: center;
+  justify-content: flex-end;
+  display: flex;
+  gap: 5px;
+}
+.details .details_contain .titlebar_right .stacks .tech_icon {
+  height: 30px;
+}
+.details .details_contain .tasks_switcher {
+  padding: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+  /* background-color: rgb(180, 112, 244); */
+  grid-area: tasks;
+}
+.details .details_contain .tasks_switcher .switcher {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+.details .details_contain .tasks_switcher .switcher_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid rgba(137, 137, 137, 0.468);
+  border-bottom: none;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  /* background-color: brown; */
+  background-color: rgba(220, 220, 220, 0.522);
+}
+.details .details_contain .tasks_switcher .switcher_header .tab:first-child {
+  border-top-left-radius: 15px;
+  border-left: none;
+}
+.details .details_contain .tasks_switcher .switcher_header .tab:last-child {
+  border-top-right-radius: 15px;
+  border-right: none;
+}
+.details .details_contain .tasks_switcher .switcher_header .active {
+  background-color: white;
+  border-bottom: none;
+  border-left: 1px solid rgba(137, 137, 137, 0.468);
+  border-right: 1px solid rgba(137, 137, 137, 0.468);
+}
+.details .details_contain .tasks_switcher .switcher_header .inactive {
+  border-bottom: 1px solid rgba(137, 137, 137, 0.468);
+}
+.details .details_contain .tasks_switcher .switcher_header .tab {
+  box-sizing: border-box;
+  cursor: pointer;
+  flex: 1;
+  height: 100%;
+  /* background-color: aqua; */
+  /* border: 1px solid black; */
+  /* border-bottom: 1px solid rgba(137, 137, 137, 0.468); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.details .details_contain .tasks_switcher .switcher_body {
+  box-sizing: border-box;
+  background-color: white;
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+  height: 100%;
+  width: 100%;
+  /* background-color: aqua; */
+  border: 1px solid rgba(137, 137, 137, 0.468);
+  border-top: none;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  /* background-color: aqua; */
+}
+.details .details_contain .tasks_switcher .switcher_body .lottie_contain {
+  width: 25%;
+}
+.details .details_contain .progress {
+  /* background-color: rgb(250, 250, 123); */
+  grid-area: progress;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.details .details_contain .project_progress {
+  height: 200px;
+  width: 200px;
+}
+.overflow {
+  height: 150vh;
+}
+
+/* task card */
+
+.taskcard {
+  margin: 0px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  /* background-color: rgba(220, 220, 220, 0.493); */
+  background-color: white;
+  border: 1px solid rgb(186, 186, 186);
+
+  box-sizing: border-box;
+  padding: 10px;
+  min-height: 110px;
+  /* width: 250px; */
+  border-radius: 10px;
+  transition: box-shadow 0.1s ease-in-out;
+}
+.taskcard:hover {
+  /* border: none; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.taskcard .title {
+  font-size: 15px;
+}
+.taskcard .description {
+  font-size: 12px;
+}
+.taskcard .assigned {
+  display: flex;
+}
+.taskcard .assigned img {
+  height: 20px;
+}
+
+.lifted {
+  border: none;
+  box-shadow: rgba(36, 36, 36, 0.24) 0px 3px 8px;
+}
+
+/* cardas */
+.taskcard .assigned .avatars {
+  position: relative;
+  display: flex;
+  list-style-type: none;
+  margin: auto;
+  padding: 0px;
+  flex-direction: row;
+  margin-left: 8px;
+}
+
+.taskcard .assigned .task_priority {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+.taskcard .assigned .avatars__item {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #596376;
+  border-radius: 100%;
+  color: #fff;
+  /* display: block; */
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 100;
+  height: 20px;
+  width: 20px;
+  line-height: 45px;
+  text-align: center;
+  transition: margin 0.1s ease-in-out;
+  overflow: hidden;
+  margin-left: -8px;
+}
+.taskcard .assigned .avatars__item:last-child {
+  z-index: 0;
+}
+.taskcard .assigned .avatars__item img {
+  height: 20px;
+  width: 20px;
+  object-fit: cover;
+}
+/* end */
+.show {
+  display: block;
+}
+.whoami {
+  display: none;
+  background-color: #596376;
+  color: white;
+  top: 100%;
+  height: fit-content;
+  left: 0px;
+  z-index: 9;
+  position: absolute;
+  padding: 3px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+.avatars__item_contain:hover .whoami {
+  display: block;
+}

@@ -1,0 +1,171 @@
+.auth {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+  /* overflow: hidden; */
+}
+
+.auth .left_section {
+  background-color: rgb(241, 250, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex: 1;
+  background-image: url("./portrait.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.auth .left_section .logo_img {
+  height: 60px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.auth .left_section .lottie_contain {
+  width: 80%;
+}
+
+.auth .right_section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+  min-width: 450px;
+}
+
+.auth .right_section .app_title {
+  cursor: pointer;
+  font-size: 50px;
+  position: absolute;
+  font-weight: bolder;
+  right: 30px;
+  top: 20px;
+}
+
+.gradient-text {
+  /* Fallback: Set a background color. */
+  background-color: var(--primary);
+
+  /* Create the gradient. */
+  background: linear-gradient(
+    160deg,
+    rgba(38, 50, 159, 1) 0%,
+    rgb(167, 74, 255) 48%,
+    rgb(50, 115, 255) 100%
+  );
+
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.auth .right_section .right_content {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  /* background-color: aqua; */
+}
+
+.auth .right_section .right_content .sub_text {
+  color: gray;
+}
+
+.auth .right_section .right_content .title_contain {
+  /* background-color: bisque; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.auth .right_section .right_content .form_contain {
+  /* background-color: violet; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.auth .right_section .right_content .form_contain .link_btn {
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.auth .right_section .right_content .form_contain form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.auth .right_section .right_content .form_contain form .textbox:focus {
+  border-bottom: 1px solid black;
+}
+
+.auth .right_section .right_content .form_contain form .textbox {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgba(185, 185, 185, 0.479);
+  padding: 8px;
+  font-size: 18px;
+}
+
+.auth .right_section .right_content .form_contain form .loader {
+  background-color: transparent;
+  height: 70px;
+}
+
+.auth .right_section .right_content .form_contain form .submit_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  background-color: var(--primary-inactive);
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  overflow-y: hidden;
+  height: 50px;
+}
+
+.auth .right_section .right_content .form_contain form .submit_btn:hover {
+  background-color: var(--primary);
+}
+.auth .right_section .right_content .form_contain form .submit_btn:disabled {
+  background-color: var(--primary-inactive);
+}
+.sub_text {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+  .auth .left_section {
+    display: none;
+  }
+
+  .auth .right_section {
+    min-width: max-content !important;
+  }
+  .auth .right_section .right_content {
+    width: 300px;
+  }
+}

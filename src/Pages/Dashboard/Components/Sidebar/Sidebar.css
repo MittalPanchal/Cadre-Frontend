@@ -1,0 +1,177 @@
+.sidebar {
+  width: min-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid gainsboro;
+  background-color: white;
+}
+.sidebar:hover {
+  flex: 2;
+}
+.sidebar:hover .project_list {
+  display: flex !important;
+}
+.sidebar:hover .user_info {
+  display: block !important;
+}
+.sidebar:hover .nav_title {
+  display: block !important;
+}
+.sidebar:hover .footer_content {
+  display: grid;
+  column-gap: 10px;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 9fr;
+  grid-template-areas:
+    "dp name"
+    "dp title";
+}
+.sidebar:hover .drop_arrow {
+  display: block !important;
+  font-size: 15px;
+  margin-left: 10px;
+}
+.sidebar .droppable {
+  align-items: center;
+  justify-content: space-between;
+}
+.sidebar .drop_arrow {
+  display: none;
+}
+.nav_title {
+  display: none;
+}
+.sidebar .sidebar_content {
+  /* background-color: blueviolet; */
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  padding: 10px;
+}
+.sidebar .sidebar_content .project_list {
+  /* background-color: blue; */
+  display: none;
+  /* display: flex; */
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 50px;
+}
+.sidebar .sidebar_content .project_list .project_card {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.sidebar .sidebar_content .project_list .dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+.sidebar .sidebar_content .nav_contain {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  gap: 10px;
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-size: 22px;
+}
+.sidebar .sidebar_content .nav_contain.active {
+  background-color: #90b2fd49;
+}
+.sidebar .sidebar_header .sidebar_logo {
+  padding: 20px 20px;
+  height: 40px;
+  cursor: pointer;
+}
+.sidebar .sidebar_footer {
+  width: 100%;
+  height: 80px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.sidebar .sidebar_footer .card_stack {
+  border-radius: 15px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.sidebar .sidebar_footer .card_stack .user_card {
+  border-radius: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #d9e5ff;
+  transition: 0.2s all linear;
+  display: flex;
+}
+.sidebar .sidebar_footer .card_stack .user_card .user_dp {
+  display: flex;
+  flex: 3;
+  justify-content: center;
+  align-items: center;
+  /* background-color: antiquewhite; */
+}
+.sidebar .sidebar_footer .card_stack .user_card .user_dp .sidebar_dp {
+  height: 40px;
+  width: 40px;
+}
+.sidebar .sidebar_footer .card_stack .user_card .user_info {
+  display: none;
+  margin-left: -50px;
+  flex: 7;
+  /* background-color: aqua; */
+}
+.sidebar .sidebar_footer .card_stack .user_card .user_info .info {
+  height: 100%;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar .sidebar_footer .card_stack .user_card .user_info .info .user_name {
+  font-size: 18px;
+  font-weight: bold;
+}
+.sidebar
+  .sidebar_footer
+  .card_stack
+  .user_card
+  .user_info
+  .info
+  .user_designation {
+  font-size: 14px;
+  color: gray;
+  font-style: italic;
+}
+.sidebar .sidebar_footer .card_stack:hover .user_card {
+  transform: translateX(-90px);
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.267);
+}
+.sidebar .sidebar_footer .card_stack .logout_card p {
+  padding: 20px;
+}
+.sidebar .sidebar_footer .card_stack .logout_card {
+  border: 1px solid gainsboro;
+  color: white;
+  border-radius: 15px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 97%;
+  height: 97%;
+  background-color: red;
+  cursor: pointer;
+}
