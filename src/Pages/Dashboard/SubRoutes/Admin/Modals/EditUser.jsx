@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import "../../Settings/settings.css";
+// import "../../Settings/settings.css";
 import avatar from "../../../../../assets/images/avatar.svg";
 import useUserCollection from "../../../../../Hooks/useUserCollection";
 import imageCompression from "browser-image-compression";
