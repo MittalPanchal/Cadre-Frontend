@@ -62,7 +62,7 @@ function App() {
           />
           <Route path="settings" element={<Settings />} />
           <Route path="time-sheet" element={<TimeSheets />} />
-          <Route path="chats" element={<Chat />} />
+{/*           <Route path="chats" element={<Chat />} /> */}
           <Route path="time-sheet/addTimesheet" element={<AddTimeSheet />} />
           <Route path="all-users" element={<AllUsers />} />
         </Route>
