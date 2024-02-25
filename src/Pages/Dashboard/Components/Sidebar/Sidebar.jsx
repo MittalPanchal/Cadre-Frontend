@@ -82,10 +82,10 @@ export default function Sidebar() {
             <BsClipboardData className="link_icon" />
             <p className="nav_title">Time Sheet</p>
           </NavLink>
-          <NavLink to="/dashboard/chats" className="nav_contain">
+          {/* <NavLink to="/dashboard/chats" className="nav_contain">
             <BsChatLeftText className="proj_fun_icons" />
             <p className="nav_title">Chats</p>
-          </NavLink>
+          </NavLink> */}
           {userData && userData.role_name === "Admin" ? (
             <NavLink to="/dashboard/all-users" className="nav_contain">
               <AiOutlineUser className="link_icon" />
